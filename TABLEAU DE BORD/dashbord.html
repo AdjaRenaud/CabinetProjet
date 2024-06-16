@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord - Cabinet de Placement</title>
+    <link href="./dasboardcss.css" rel="stylesheet">
+    <link rel="icon" href="/chemin/vers/votre-logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../ico/favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: rgb(7, 41, 77);
+            color: white;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: rgb(254, 202, 0);
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        #card{
+            color: brown;
+        }
+        .bg-success{
+            color:rgb(7, 41, 77)
+        }
+        .tbl{
+            color: rgb(7, 41, 77);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h4 class="text-center">Admin</h4>
+        <br>
+        <br>
+        
+        <a class="tbl" href="#dashboard">Tableau de Bord</a>
+        <a href="#recrutement">Recrutement</a>
+        <a href="#consultation">Consultation</a>
+        <a href="#formation">Formation</a>
+        <a href="#profile">Profil</a>
+        <a href="#logout">Déconnexion</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Cabinet de Placement</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile">Mon Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#logout">Déconnexion</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="dashboard">
+            <h2>Tableau de Bord</h2>
+            <p>Bienvenue dans le tableau de bord de l'administration. Utilisez le menu latéral pour naviguer dans les
+                différentes sections.</p>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-white bg-primary mb-3">
+                        <div class="card-header">Recrutement</div>
+                        <div class="card-body">
+                            <h5 class="card-title">50 Candidats</h5>
+                            <p class="card-text">Nombre total de candidats en cours de recrutement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-success mb-3">
+                        <div class="card-header">Consultation</div>
+                        <div class="card-body">
+                            <h5 class="card-title">30 Consultations</h5>
+                            <p class="card-text">Nombre total de consultations effectuées ce mois.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-info mb-3">
+                        <div class="card-header">Formation</div>
+                        <div class="card-body">
+                            <h5 class="card-title">15 Formations</h5>
+                            <p class="card-text">Nombre total de formations organisées ce mois.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
