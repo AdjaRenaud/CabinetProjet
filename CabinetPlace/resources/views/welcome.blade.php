@@ -179,6 +179,11 @@
                 opacity: 1;
             }
         }
+        @media (max-width: 1311px){
+            ul{
+                display: none;
+            }
+        }
     </style>
 </head>
 
